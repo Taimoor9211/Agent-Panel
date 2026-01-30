@@ -30,7 +30,7 @@ const Layout = () => {
   }, [location]);
 
   return (
-    <div className="flex justify-center bg-gray-100">
+    <div className="flex justify-center">
       {/* 1440px Wrapper */}
       <div className="flex w-[1440px]">
 

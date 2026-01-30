@@ -41,10 +41,10 @@ const Sidebar = ({
   return (
     <div
       className={`px-2 bg-gray-50 border-r border-gray-200 shadow-lg
-      transition-all duration-300 ease-in-out
-      flex flex-col
-      ${expanded ? "w-64" : "w-20"}`}
-      style={{ height: "1400px" }}
+  transition-all duration-300 ease-in-out
+  flex flex-col
+  ${expanded ? "w-64" : "w-20"} 
+  min-h-screen`} // <-- use min-h-screen for full page height
     >
       {/* Toggle */}
       <div className="flex justify-end p-4">
@@ -97,11 +97,11 @@ const Sidebar = ({
         </ul>
 
         {/* Bottom Section */}
-        <div className="mt-auto pt-12 space-y-4">
+        <div className="pt-30 space-y-4">
           {/* Dark Mode */}
           <div
             className={`flex items-center rounded-lg hover:bg-gray-100 transition-all
-            ${expanded ? "justify-between px-4 py-3" : "justify-center py-3"}`}
+    ${expanded ? "justify-between px-4 py-3" : "justify-center py-3"}`}
           >
             <div className="flex items-center gap-4 text-gray-600 text-[15px]">
               <div className="w-10 h-10 flex items-center justify-center">
@@ -129,8 +129,8 @@ const Sidebar = ({
           {/* Logout */}
           <button
             className={`flex items-center rounded-lg transition-all
-            ${expanded ? "gap-4 px-4 py-3 justify-start" : "justify-center py-3"}
-            text-red-500 hover:bg-red-50`}
+    ${expanded ? "gap-4 px-4 py-3 justify-start" : "justify-center py-3"}
+    text-red-500 hover:bg-red-50`}
           >
             <div className="w-10 h-10 flex items-center justify-center">
               <LogOut size={22} />
