@@ -1,114 +1,114 @@
-import React from 'react'
+import React from "react";
 import { Languages, MapPin, MoreVertical, MessageCircle } from "lucide-react";
 import Image2 from "../../assets/Images/Image2.jpg";
 
 const UrgentJobsActivity = () => {
-    const jobCards = [
-        {
-          id: 1,
-          title: "Plumber",
-          jobId: "#JCD001",
-          status: "Urgent",
-          client: "Michael John",
-          languages: "English, Hindi",
-          location: "San Francisco",
-          date: "Wednesday - April 23, 2025",
-          time: "11:30 AM",
-          jobType: "Plumber",
-          image: Image2,
-          statusColor: "bg-blue-500",
-          statusBg: "bg-blue-50",
-          statusText: "text-blue-700",
-          Button: "Assign Provider",
-        },
-        {
-          id: 2,
-          title: "Electrician",
-          jobId: "#JCD002",
-          status: "Urgent",
-          client: "Sarah Johnson",
-          languages: "English, Spanish",
-          location: "New York City",
-          date: "Thursday - April 24, 2025",
-          time: "02:45 PM",
-          jobType: "Electrician",
-          image: Image2,
-          statusColor: "bg-blue-500",
-          statusBg: "bg-blue-50",
-          statusText: "text-blue-700",
-          Button: "Assign Provider",
-        },
-        {
-          id: 3,
-          title: "Carpenter",
-          jobId: "#JCD003",
-          status: "Urgent",
-          client: "Robert Wilson",
-          languages: "English, French",
-          location: "Chicago",
-          date: "Friday - April 25, 2025",
-          time: "10:00 AM",
-          jobType: "Carpenter",
-          image: Image2,
-          statusColor: "bg-blue-500",
-          statusBg: "bg-blue-50",
-          statusText: "text-blue-700",
-          Button: "Assign Provider",
-        },
-        {
-          id: 4,
-          title: "Plumber",
-          jobId: "#JCD001",
-          status: "Urgent",
-          client: "Michael John",
-          languages: "English, Hindi",
-          location: "San Francisco",
-          date: "Wednesday - April 23, 2025",
-          time: "11:30 AM",
-          jobType: "Plumber",
-          image: Image2,
-          statusColor: "bg-blue-500",
-          statusBg: "bg-blue-50",
-          statusText: "text-blue-700",
-          Button: "Assign Provider",
-        },
-        {
-          id: 5,
-          title: "Electrician",
-          jobId: "#JCD002",
-          status: "Urgent",
-          client: "Sarah Johnson",
-          languages: "English, Spanish",
-          location: "New York City",
-          date: "Thursday - April 24, 2025",
-          time: "02:45 PM",
-          jobType: "Electrician",
-          image: Image2,
-          statusColor: "bg-blue-500",
-          statusBg: "bg-blue-50",
-          statusText: "text-blue-700",
-          Button: "Assign Provider",
-        },
-        {
-          id: 6,
-          title: "Carpenter",
-          jobId: "#JCD003",
-          status: "Urgent",
-          client: "Robert Wilson",
-          languages: "English, French",
-          location: "Chicago",
-          date: "Friday - April 25, 2025",
-          time: "10:00 AM",
-          jobType: "Carpenter",
-          image: Image2,
-          statusColor: "bg-blue-500",
-          statusBg: "bg-blue-50",
-          statusText: "text-blue-700",
-          Button: "Assign Provider",
-        },
-      ];
+  const jobCards = [
+    {
+      id: 1,
+      title: "Plumber",
+      jobId: "#JCD001",
+      status: "Urgent",
+      client: "Michael John",
+      languages: "English, Hindi",
+      location: "San Francisco",
+      date: "Wednesday - April 23, 2025",
+      time: "11:30 AM",
+      jobType: "Plumber",
+      image: Image2,
+      statusColor: "bg-blue-500",
+      statusBg: "bg-blue-50",
+      statusText: "text-blue-700",
+      Button: "Assign Provider",
+    },
+    {
+      id: 2,
+      title: "Electrician",
+      jobId: "#JCD002",
+      status: "Urgent",
+      client: "Sarah Johnson",
+      languages: "English, Spanish",
+      location: "New York City",
+      date: "Thursday - April 24, 2025",
+      time: "02:45 PM",
+      jobType: "Electrician",
+      image: Image2,
+      statusColor: "bg-blue-500",
+      statusBg: "bg-blue-50",
+      statusText: "text-blue-700",
+      Button: "Assign Provider",
+    },
+    {
+      id: 3,
+      title: "Carpenter",
+      jobId: "#JCD003",
+      status: "Urgent",
+      client: "Robert Wilson",
+      languages: "English, French",
+      location: "Chicago",
+      date: "Friday - April 25, 2025",
+      time: "10:00 AM",
+      jobType: "Carpenter",
+      image: Image2,
+      statusColor: "bg-blue-500",
+      statusBg: "bg-blue-50",
+      statusText: "text-blue-700",
+      Button: "Assign Provider",
+    },
+    {
+      id: 4,
+      title: "Plumber",
+      jobId: "#JCD001",
+      status: "Urgent",
+      client: "Michael John",
+      languages: "English, Hindi",
+      location: "San Francisco",
+      date: "Wednesday - April 23, 2025",
+      time: "11:30 AM",
+      jobType: "Plumber",
+      image: Image2,
+      statusColor: "bg-blue-500",
+      statusBg: "bg-blue-50",
+      statusText: "text-blue-700",
+      Button: "Assign Provider",
+    },
+    {
+      id: 5,
+      title: "Electrician",
+      jobId: "#JCD002",
+      status: "Urgent",
+      client: "Sarah Johnson",
+      languages: "English, Spanish",
+      location: "New York City",
+      date: "Thursday - April 24, 2025",
+      time: "02:45 PM",
+      jobType: "Electrician",
+      image: Image2,
+      statusColor: "bg-blue-500",
+      statusBg: "bg-blue-50",
+      statusText: "text-blue-700",
+      Button: "Assign Provider",
+    },
+    {
+      id: 6,
+      title: "Carpenter",
+      jobId: "#JCD003",
+      status: "Urgent",
+      client: "Robert Wilson",
+      languages: "English, French",
+      location: "Chicago",
+      date: "Friday - April 25, 2025",
+      time: "10:00 AM",
+      jobType: "Carpenter",
+      image: Image2,
+      statusColor: "bg-blue-500",
+      statusBg: "bg-blue-50",
+      statusText: "text-blue-700",
+      Button: "Assign Provider",
+    },
+  ];
 
-      const JobCard = ({ job }) => (
+  const JobCard = ({ job }) => (
     <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300 h-full flex flex-col hover:border-[#515DEF]/20">
       {/* Card Header */}
       <div className="p-4 sm:p-5 lg:p-6 flex-grow">
@@ -216,7 +216,6 @@ const UrgentJobsActivity = () => {
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900">
             Urgent Jobs
           </h2>
-          
         </div>
 
         {/* Job Cards Grid */}
@@ -226,9 +225,8 @@ const UrgentJobsActivity = () => {
           ))}
         </div>
       </section>
-
     </div>
-  )
-}
+  );
+};
 
-export default UrgentJobsActivity
+export default UrgentJobsActivity;

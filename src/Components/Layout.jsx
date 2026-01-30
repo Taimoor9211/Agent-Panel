@@ -9,7 +9,6 @@ const Layout = () => {
   const [darkMode, setDarkMode] = useState(false);
   const location = useLocation();
 
-  // Location change par active menu update karein
   useEffect(() => {
     const pathToNameMap = {
       "/": "Dashboard",
@@ -25,33 +24,33 @@ const Layout = () => {
       "/csat": "CSAT",
     };
 
-    const currentPath = location.pathname;
-    if (pathToNameMap[currentPath]) {
-      setActive(pathToNameMap[currentPath]);
+    if (pathToNameMap[location.pathname]) {
+      setActive(pathToNameMap[location.pathname]);
     }
   }, [location]);
 
   return (
-    <div className="flex h-screen">
-      <Sidebar
-        expanded={expanded}
-        setExpanded={setExpanded}
-        active={active}
-        setActive={setActive}
-        darkMode={darkMode}
-        setDarkMode={setDarkMode}
-      />
+    <div className="flex justify-center bg-gray-100">
+      {/* 1440px Wrapper */}
+      <div className="flex w-[1440px]">
 
-      {/* Main Content */}
-      <div
-        className={`flex-1 transition-all duration-300 ease-in-out ${
-          expanded ? "ml-64" : "ml-16"
-        }`}
-      >
-        <Navbar active={active} />
-        <main className="p-4">
-          <Outlet context={{ active, setActive }} />
-        </main>
+        <Sidebar
+          expanded={expanded}
+          setExpanded={setExpanded}
+          active={active}
+          setActive={setActive}
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+        />
+
+        {/* Main Content */}
+        <div className="flex-1 flex flex-col">
+          <Navbar active={active} />
+          <main className="p-4">
+            <Outlet context={{ active, setActive }} />
+          </main>
+        </div>
+
       </div>
     </div>
   );
