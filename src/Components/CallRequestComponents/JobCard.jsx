@@ -67,6 +67,13 @@ const JobCard = ({ job, handleMarkAsDone }) => {
       {/* Job Details */}
       <div className="p-4 sm:p5 lg:p-6 space-y-3">
         <div className="flex justify-between items-center">
+  <p className="text-xs text-gray-500">Caller Type</p>
+  <p className="font-medium text-gray-900 text-xs sm:text-sm text-right truncate pl-2">
+    {job.CallerType || "Customer"}
+  </p>
+</div>
+
+        <div className="flex justify-between items-center">
           <p className="text-xs text-gray-500">Date</p>
           <p className="font-medium text-gray-900 text-xs sm:text-sm text-right truncate pl-2">
             {job.date}

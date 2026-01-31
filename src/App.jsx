@@ -11,6 +11,8 @@ import ProviderMatching from "./Pages/ProviderMatching.jsx";
 import Policies from "./Pages/Policies.jsx";
 import TimeTable from "./Pages/TimeTable.jsx";
 import CSAT from "./Pages/CSAT.jsx";
+import ChatApp from "./Components/ProviderMatchingComponents.jsx/ChatApp.jsx";
+import ReviewsAndRatings from "./Components/ProviderMatchingComponents.jsx/ReviewsAndRatings.jsx";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
           <Route path="policies" element={<Policies />} />
           <Route path="time-table" element={<TimeTable />} />
           <Route path="csat" element={<CSAT />} />
+          <Route path="chat-app" element={<ChatApp/>} />
+          <Route path="reviews-and-ratings" element={<ReviewsAndRatings/>} />
         </Route>
       </Routes>
     </Router>

@@ -1,8 +1,11 @@
 import React from 'react'
+import CustomerOtherRequests from '../Components/OtherRequestsComponents/CustomerOtherRequests'
 
 const OtherRequests = () => {
   return (
-    <div>OtherRequests</div>
+    <div>
+      <CustomerOtherRequests/>
+    </div>
   )
 }
 

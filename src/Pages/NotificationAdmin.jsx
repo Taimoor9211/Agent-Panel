@@ -1,8 +1,11 @@
 import React from 'react'
+import NotificationAdminComponents from '../Components/NotificationAdminComponents/NotificationAdminComponents'
 
 const NotificationAdmin = () => {
   return (
-    <div>NotificationAdmin</div>
+    <div>
+      <NotificationAdminComponents/>
+    </div>
   )
 }
 

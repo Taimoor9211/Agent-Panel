@@ -129,7 +129,7 @@ const Sidebar = ({
           {/* Logout */}
           <button
             className={`flex items-center rounded-lg transition-all
-    ${expanded ? "gap-4 px-4 py-3 justify-start" : "justify-center py-3"}
+    ${expanded ? "gap-4 px-4 py-3 w-full justify-start" : "justify-center py-3"}
     text-red-500 hover:bg-red-50`}
           >
             <div className="w-10 h-10 flex items-center justify-center">

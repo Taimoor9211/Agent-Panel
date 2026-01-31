@@ -1,8 +1,11 @@
 import React from 'react'
+import AvailbleServiceProvider from '../Components/ProviderMatchingComponents.jsx/AvailbleServiceProvider'
 
 const ProviderMatching = () => {
   return (
-    <div>ProviderMatching</div>
+    <div>
+      <AvailbleServiceProvider/>
+    </div>
   )
 }
 
